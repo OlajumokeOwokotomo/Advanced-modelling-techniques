@@ -1,0 +1,146 @@
+\documentclass[11pt]{article}
+\renewcommand{\baselinestretch}{1.1}
+\setlength{\parindent}{0cm}
+
+%%% Add packages here
+    \usepackage{times}
+    \usepackage[utf8]{inputenc}
+	\usepackage{graphics}
+	\usepackage{graphicx}
+    \usepackage{lscape}
+	\usepackage{amsfonts}
+	\usepackage{amsmath}
+	\usepackage{amsthm}
+    \usepackage{array}
+	\usepackage{amssymb}
+	\usepackage{latexsym}
+	\usepackage{verbatim}
+    \usepackage{color}
+	\usepackage{fancyhdr}
+	\usepackage{fancybox}
+    \usepackage{mathtools}
+    %\usepackage{subcaption}
+    \usepackage{subfig}
+   %\usepackage{w-thm}
+   
+   \usepackage[authoryear]{natbib}
+    \usepackage{float}
+    \usepackage[utf8]{inputenc}
+    \usepackage[english]{babel}
+    \usepackage{multicol}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Margins
+%\setlength{\bibsep}{2pt}
+%\setlength{\bibhang}{2em}
+
+\addtolength{\oddsidemargin}{-.50in}
+\addtolength{\evensidemargin}{-.50in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.40in}
+\addtolength{\textheight}{0.80in}
+
+%%% Header
+	\pagestyle{fancy}
+	\chead{\groupname}
+	\rhead{}
+	\lhead{}
+	\cfoot{\thepage}
+	\renewcommand{\headrulewidth}{0.4pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% START MAKING CHANGES HERE!
+
+%%% Group details - PLEASE PUT YOUR GROUP NUMBER HERE!
+\newcommand{\groupname}{Advanced Modeling Techniques (2016--2017)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\clearpage\thispagestyle{empty}
+
+\begin{center}
+	% title
+	\textbf{\huge{Finite Mixture Approach to Identifying Substructures in Population of Inflammatory Bowel Disease Patients}} \\[1.7cm]
+	% details
+	\Large{
+	Advanced Modeling Techniques\\
+	2016-2017 \\[0.5cm]
+	$2^{nd}$ year Master of Statistics \\
+	Hasselt University	
+	}
+\end{center}
+
+\vspace*{3cm}
+
+\textbf{\large{Owokotomo Olajumoke Evangelina}}\\
+ \\[2.5cm]
+
+\noindent\textit{Submission Date:} April 25, 2017.
+
+\vspace*{3cm}
+\textbf{\large{Lecturers:}}\\
+Prof. Dr. Molenberghs Geert  \\
+Prof. Dr.  Verberke Geert
+
+
+%%% THE WRITTEN PROJECT - MAX. 20 PAGES (everything included)
+%%% page numbering starts here.
+\newpage \setcounter{page}{1}
+
+\begin{abstract}
+Inflammatory bowel diseases (IBDs) are chronic and relapsing condition that affects the digestive tract which affect individuals of varying age
+\end{abstract}
+\rule{\textwidth}{0.4pt}
+
+\newpage
+\section*{Introduction}\label{introduction}
+Inflammatory bowel diseases (IBDs) are chronic and progressive inflammatory disorders of the digestive tract, they are progressive in nature and causes disiabling conditions which can be life threatening. The most common IBDs occuring in humans are Crohn's disease (CD) which affect only the colon and ulcerative colitis (UC) which  affect all of the digestive system \cite{bib1}. The main causes of IBDs are unclear but factors such as genetics and disruption of the immune system plays an important role \cite{bib2}. Symptoms include recurrent diarrhoea, blood in stools, constipation,fever, abdominal pain and reduced apetite. Treatment of IBDs is aim at reducing inflammation for a long time remission, as there is no cure to IBDs, treatment invovles drugs(Anti-inflammatory, Immune supressor and antibiotics)  and surgery(colectomy) \cite{bib3} due to inability of a single and effective treatment has called for the use of several IBD scoring to charactrized IBD patients. 
+
+%According to \cite{bib4} over 1 million residents in the USA and 2.5 million in Europe are estimated to have IBD
+
+
+\subsection*{Objectives}
+The aim is to use finite mixture approach to explore the different components in the mixture , to see how the components are related to the treatment patients received and to the IBD score at baseline. In addition to seeing if patient characteristics completely explain the presence of potential clusters in the outcome.
+\subsection*{IBD Activity Score Dataset}
+The dataset used in this study is from a a clinical trial with 291 subjects, divided over four treatment arms: 0: placebo; 1: 1000 mg; 2: 2000 mg; 3: 4000 mg. Subjects are measured during a 7 week period. The outcome of interest is an IBD activity score. The same score is also measured at baseline as well. For the purpose of this study the response of interest is the number of weeks in the period Week 1 through Week 7 in which a value of IBD larger than 100 was observed.
+$$ Y_{i} = \sum_{j}^{n_{i}} I(IBDsc_{ij} > 100) \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ i = 1,2,...,291$$
+
+
+\section*{Methodology}
+In order to get a better insight and understanding of the dataset, exploratory data analysis was carried using graphical method .The use of summary statistics was also employed.
+
+\section*{Results}
+\subsection*{Exploratory Analysis}
+
+
+\section*{Fitted Mixtures}
+
+\section*{Accounting for Patients Characteristics}
+
+\section*{Conclusion}
+
+\begin{thebibliography}{100}
+
+%\bibitem[mayoclinic, 2017]{bib2} Mayo Clinic. (2017). \textit{Hematocrit test}. Retrieved from the World Wide Web on 9-4-2017. 
+
+\bibitem[ Viennois, Emilie et al. , (2016)]{bib1} Viennois, E., Zhao, Y., Zhang, M.,Han, M., and Merlin, D. (2016). \textit{O-016 YI Longitudinal Study Of Circulating Mirna Biomarkers In Inflammatory Bowel Disease". Inflammatory Bowel Diseases}, Inflammatory Bowel Diseases, vol. 22, pp. S6.
+
+\bibitem[Nhs.uk, 2017]{bib2} Nhs.uk (2017). \textit{"Inflammatory Bowel Disease - NHS Choices"},Nhs.uk,[online].Avaiable at:http://www.nhs.uk/conditions/inflammatory-bowel-disease/Pages/Introduction.aspx [Accessed 12 Apr. 2017].
+
+\bibitem[mayoclinic.org, 2017]{bib3} Mayoclinic.org (2017). \textit{Inflammatory bowel disease (IBD) Treatments and drugs} ,mayoclinic.org,[online]. Avaiable at http://www.mayoclinic.org/diseases-conditions/inflammatory-bowel-disease/basics/treatment/con-20034908 [Accessed 12 Apr. 2017].
+
+%\bibitem[Gilaad, G. K. , 2015]{bib4} Gilaad, G. K. , (2015). \textit{The global burden of IBD: from 2015 to 2025}, Nature Reviews Gastroenterology & Hepatology, vol. 12(12), pp. 720-727.
+
+
+%\bibitem[Molenberghs and Verbeke, 2005]{bib5} Molenberghs, G. and  Verbeke, G. (2005). \textit{Models for Discrete Longitudinal Data}. Springer Series in Statistics, Springer, New York.
+
+\end{thebibliography}
+
+\section*{Appendix}
+
+\end{document}
